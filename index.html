@@ -8,6 +8,7 @@
 <meta property="og:title" content="Pollo al horno con papas · Domingo 15">
 <meta property="og:description" content="$24.000 para 4 personas · Envío gratis en Monte Caseros · Pedidos hasta el sábado 18 h">
 <meta property="og:image" content="pollo.jpg">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><circle cx='50' cy='50' r='50' fill='%23b3262d'/><text x='50' y='68' font-size='58' text-anchor='middle'>🍗</text></svg>">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
@@ -43,7 +44,7 @@
   .btn:active{transform:scale(.98)}
   .btn svg{width:24px;height:24px;flex:none}
   .wa{background:var(--verde);color:#fff;box-shadow:0 6px 18px rgba(37,211,102,.35)}
-  .ig{background:#fff;color:var(--negro);border:2px solid var(--negro)}
+  .fb{background:#1877f2;color:#fff}
   .sena{font-size:.9rem;text-align:center;color:#5a504b;margin-top:6px}
   footer{text-align:center;padding:20px;font-size:.8rem;color:#8a7f79;border-top:1px solid #eee}
   @media (min-width:600px){body{padding:24px 0}.wrap{border-radius:16px;overflow:hidden;min-height:auto}}
@@ -51,7 +52,7 @@
 </head>
 <body>
 <div class="wrap">
-  <header id="nombre">Casero Caseros · Monte Caseros</header>
+  <header id="nombre">Sabor Caseros · Monte Caseros</header>
 
   <div class="hero">
     <img src="pollo.jpg" alt="Pollo entero al horno con papas rústicas" width="1200" height="1054">
@@ -78,9 +79,9 @@
       <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.1l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.3-.4.2-.4.7-1.4.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.8 11.8 0 0 0 4.5 4c1.7.7 2.3.8 3.2.6.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3z"/></svg>
       Pedí por WhatsApp
     </a>
-    <a class="btn ig" id="btn-ig" href="#" target="_blank" rel="noopener">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
-      Seguinos en Instagram
+    <a class="btn fb" id="btn-fb" href="#" target="_blank" rel="noopener">
+      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12a12 12 0 1 0-13.9 11.9v-8.4H7.1V12h3V9.4c0-3 1.8-4.7 4.5-4.7 1.3 0 2.7.2 2.7.2v3h-1.5c-1.5 0-2 .9-2 1.9V12h3.4l-.5 3.5h-2.9v8.4A12 12 0 0 0 24 12z"/></svg>
+      Seguinos en Facebook
     </a>
     <p class="sena">Comida casera, abundante y a tu puerta 🏠</p>
   </main>
@@ -90,15 +91,15 @@
 
 <script>
   /* ====== EDITÁ ACÁ TUS DATOS ====== */
-  const NOMBRE    = "Casero Caseros";          // nombre del emprendimiento
+  const NOMBRE    = "Sabor Caseros";           // nombre del emprendimiento
   const WHATSAPP  = "543624597356";            // 54 + código de área sin 0 + número sin 15
-  const INSTAGRAM = "caserocaseros";           // usuario de Instagram, sin @
+  const FACEBOOK  = "https://www.facebook.com/people/Sabor-Caseros/61596524099733/";
   const MENSAJE   = "¡Hola! Quiero reservar pollo al horno con papas para el domingo 15 🍗";
   /* ================================= */
 
   document.getElementById("nombre").textContent = NOMBRE + " · Monte Caseros";
   document.getElementById("btn-wa").href = "https://wa.me/" + WHATSAPP + "?text=" + encodeURIComponent(MENSAJE);
-  document.getElementById("btn-ig").href = "https://instagram.com/" + INSTAGRAM;
+  document.getElementById("btn-fb").href = FACEBOOK;
   document.querySelector("footer").textContent = NOMBRE + " · Monte Caseros, Corrientes";
 </script>
 </body>
